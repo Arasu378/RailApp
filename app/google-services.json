@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "777762073926",
+    "firebase_url": "https://railapp-88d3b.firebaseio.com",
+    "project_id": "railapp-88d3b",
+    "storage_bucket": "railapp-88d3b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:777762073926:android:05d6c473a46ea474",
+        "android_client_info": {
+          "package_name": "com.kyros.technologies.railapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "777762073926-n7jnj162pj5odfekb3gcq62768aovrq7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPNuNoPKnHYiOoDHV78aIQewfTo02wQEw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

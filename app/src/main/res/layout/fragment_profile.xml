@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/background_layout"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:id="@+id/linear_back"
+                android:background="@color/profile_background"
+                android:orientation="vertical">
+                <!--<LinearLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:orientation="vertical"-->
+                <!--android:layout_gravity="right"-->
+                <!--android:layout_height="wrap_content">-->
+                <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="right"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:src="@drawable/checkmark24"/>-->
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Save"-->
+                <!--android:textSize="14sp"-->
+                <!--android:textColor="@color/text_color_hint"-->
+                <!--android:layout_marginRight="10dp"-->
+
+                <!--android:layout_gravity="right"/>-->
+
+                <!--</LinearLayout>-->
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="96dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="96dp"
+                    android:src="@drawable/profilepicture"
+                    app:civ_border_color="@color/colorPrimaryDark"
+                    android:layout_gravity="center"
+                    app:civ_border_width="0.5dp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/profile_image"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Lionel Amalan"
+                                android:textSize="16sp"
+                                android:id="@+id/name_profile"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:textColor="@color/text_color"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="lionel@gmail.com"
+                                android:textSize="14sp"
+                                android:id="@+id/email_profile_home"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:textColor="@color/text_color"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/linear_radio_group"
+                android:layout_below="@+id/linear_back">
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="5dp"
+                    app:cardCornerRadius="3dp">
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:id="@+id/radio_group"
+                        android:weightSum="100"
+                        android:layout_marginBottom="3dp"
+                        android:layout_height="50dp">
+
+                        <RadioButton
+                            android:id="@+id/change_profile"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="50"
+                            android:button="@null"
+                            android:layout_marginTop="5dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="Profile"
+                            android:textColor="@color/text_color" />
+                        <RadioButton
+                            android:id="@+id/change_password"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="50"
+                            android:layout_gravity="center"
+                            android:button="@null"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:text="Change Password"
+                            android:textColor="@color/text_color" />
+
+                    </RadioGroup>
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linear_radio_group"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:id="@+id/frame_container">
+
+            </FrameLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>
